@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src:
+      local('Poppins'),
+      url('./fonts/poppins/Poppins-Regular.ttf') format('ttf');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 600;
+    src:
+      local('Poppins'),
+      url('./fonts/poppins/Poppins-SemiBold.ttf') format('ttf');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    src:
+      local('Poppins'),
+      url('./fonts/poppins/Poppins-Bold.ttf') format('ttf');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    src:
+      local('Nunito Sans'),
+      url('./fonts/nunito/NunitoSans-Regular.ttf') format('ttf');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    src:
+      local('Nunito Sans'),
+      url('./fonts/nunito/NunitoSans-Regular.ttf') format('ttf');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    src:
+      local('Nunito Sans'),
+      url('./fonts/nunito/NunitoSans-Regular.ttf') format('ttf');
+    font-display: swap;
+  }
+}
+
+@layer components {
+}
+
+body {
+  min-height: 100dvh;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
