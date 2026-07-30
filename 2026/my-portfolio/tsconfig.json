@@ -22,7 +22,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@services/*": ["./src/services/*"],
-      "@fallbacks/*": ["./src/fallbacks/*"]
+      "@fallbacks/*": ["./src/fallbacks/*"],
+      "@components/*": ["./src/components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

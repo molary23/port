@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 @layer base {
   @font-face {
@@ -59,6 +57,12 @@
 }
 
 @layer components {
+  .nav-link-cta {
+    @apply focus-within:rounded-md focus-within:bg-gray-900 px-3 py-2 text-sm font-medium text-white hover:text-gray-300;
+  }
+  .nav-mobile-link-cta {
+    @apply block rounded-md px-3 py-2 text-base font-medium text-white hover:text-gray-300;
+  }
 }
 
 body {
