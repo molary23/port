@@ -1,9 +1,10 @@
-import InfoContextProvider from '@/services/info-context'
+import InfoContextProvider from '@services/info-context'
+import {Main} from '@components/Main'
 
 function App() {
   return (
     <InfoContextProvider>
-      <h1>My Portfolio</h1>
+      <Main />
     </InfoContextProvider>
   )
 }

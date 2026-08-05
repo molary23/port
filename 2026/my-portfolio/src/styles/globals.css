@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-brand-blue-900: #97c6fc;
+  --color-brand-blue-600: #cee4fd;
+}
 
 @layer base {
   @font-face {
@@ -59,10 +62,30 @@
 }
 
 @layer components {
+  .nav-link-cta {
+    @apply focus-within:rounded-md focus-within:bg-gray-900 px-3 py-2 text-sm font-medium text-white hover:text-gray-300;
+  }
+  .nav-mobile-link-cta {
+    @apply block rounded-md px-3 py-2 text-base font-medium text-white hover:text-gray-300;
+  }
 }
 
 body {
   min-height: 100dvh;
+}
+
+.job-role {
+  animation:
+    typing 3.5s steps(40),
+    blink-caret 0.75s step-end infinite;
+  border-right: 0.08em solid rgba(5, 242, 203, 0.8);
+  color: #5ea1ed;
+  font-family: monospace;
+  font-size: 1.35rem;
+  letter-spacing: 0.15em;
+  margin: 10px auto;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 :root {
