@@ -1,4 +1,4 @@
-import {noop} from '../utils/utils'
+import {SITE_URL, SITE_NAME} from '../utils/constants'
 import {useState} from 'react'
 
 export const Nav = () => {
@@ -17,7 +17,7 @@ export const Nav = () => {
 
   return (
     <header>
-      <nav className="relative bg-blue-300">
+      <nav className="relative bg-brand-blue-900">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -65,9 +65,10 @@ export const Nav = () => {
             <div className="flex flex-1 items-center sm:items-stretch sm:justify-between justify-end">
               <div className="flex shrink-0 items-center">
                 <img
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                  alt="Your Company"
+                  src="/hassanadeola-logo.png"
+                  alt={SITE_NAME}
                   className="h-8 w-auto"
+                  loading="eager"
                 />
               </div>
               <div className="hidden sm:ml-6 sm:block">

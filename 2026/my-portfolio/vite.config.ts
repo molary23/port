@@ -14,6 +14,7 @@ export default defineConfig({
       '@services': path.resolve(__dirname, 'src/services'),
       '@fallbacks': path.resolve(__dirname, 'src/fallbacks'),
       '@components': path.resolve(__dirname, 'src/components'),
+      '@utils': path.resolve(__dirname, 'src/utils'),
     },
   },
   plugins: [react(), tailwindcss()],

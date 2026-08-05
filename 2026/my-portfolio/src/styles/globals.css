@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-brand-blue-900: #97c6fc;
+  --color-brand-blue-600: #cee4fd;
+}
+
 @layer base {
   @font-face {
     font-family: 'Poppins';
@@ -67,6 +72,20 @@
 
 body {
   min-height: 100dvh;
+}
+
+.job-role {
+  animation:
+    typing 3.5s steps(40),
+    blink-caret 0.75s step-end infinite;
+  border-right: 0.08em solid rgba(5, 242, 203, 0.8);
+  color: #5ea1ed;
+  font-family: monospace;
+  font-size: 1.35rem;
+  letter-spacing: 0.15em;
+  margin: 10px auto;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 :root {

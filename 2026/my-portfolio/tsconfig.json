@@ -23,7 +23,8 @@
       "@/*": ["./src/*"],
       "@services/*": ["./src/services/*"],
       "@fallbacks/*": ["./src/fallbacks/*"],
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["./src/components/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
